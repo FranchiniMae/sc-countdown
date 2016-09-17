@@ -1,0 +1,97 @@
+/**** MAIN PAGE ****/
+html {
+	border: 2pt solid #EAEAEA;
+	padding: 20px 0px;
+}
+
+body {
+	font-family: arial;
+	text-align: center;
+}
+
+/**** TIMER CONTAINER ****/
+.colon {
+	float: left;
+	font-size: 5em;
+	margin-top: 0px;
+}
+
+.container {
+	width: 150px;
+	height: 150px;
+	float: left;
+	margin-top: -60px;
+}
+
+.days, .hours, .minutes, .seconds {
+	font-size: 4em;
+	font-weight: bold;
+}
+
+.labels, .seclabels {
+	font-weight: bold;
+	color: black;
+	margin-top: -60px;
+}
+
+#timer {
+	width: 670px;
+	margin: 0px auto;
+}
+
+/**** MEDIA QUERY FOR SMALLER DEVICES ****/
+@media only screen and (min-width: 415px) and (max-width : 690px) {
+	.colon {
+		font-size: 2em;
+		margin-top: 5px;
+	}
+
+	.container {
+		width: 110px;
+		height: 110px;
+	}
+
+	.days, .hours, .minutes, .seconds {
+		font-size: 3em;
+		font-weight: bold;
+		margin-top: 60px;
+	}
+
+	.labels, .seclabels {
+		font-size: 12px;
+		margin-top: -50px;
+	}
+
+	#timer {
+		width: 500px;
+	}
+}
+
+/**** MEDIA QUERY FOR MOBILE ****/
+@media only screen and (max-width : 414px) {
+	.colon {
+		font-size: 2em;
+		margin-top: 5px;
+	}
+
+	.container {
+		width: 75px;
+		height: 75px;
+	}
+
+	.days, .hours, .minutes, .seconds {
+		font-size: 2em;
+		font-weight: bold;
+		margin-top: 60px;
+	}
+
+	.labels, .seclabels {
+		font-size: 12px;
+		margin-top: -32px;
+	}
+
+	#timer {
+		width: 400px;
+		margin-left: 7%
+	}
+}
